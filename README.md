@@ -34,6 +34,9 @@ bs_local.stop(function() {
   console.log("Stopped BrowserStackLocal");
 });
 
+// stop the binary local instance even if 
+// it wasn't started in the same process
+bs_local.stop(function() {},true );
 ```
 
 ## Arguments
